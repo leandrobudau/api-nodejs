@@ -8,7 +8,7 @@ module.exports = function () {
         logo: String,
     });
     
-    return mongoose.model('topo', schemaTopo);
+    return mongoose.model('footer', schemaTopo);
 }
 
 

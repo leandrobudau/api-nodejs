@@ -1,16 +1,14 @@
 module.exports = function (app) {
-    var modelTopo = app.models.header;
+    var modelFooter = app.controllers.footer;
 
-    var headerController = {
+    var footerController = {
         index: function (req, res) {
-            modelTopo.findOne({}, function (err, data) {
+            modelFooter.findOne({}, function (err, data) {
                 res.json(data);   
             });
         },
-        update: function (req, res) { 
-            req.body.logo = req.file.filename;
-            
-            modelTopo.update({},
+        update: function (req, res) {   
+            modelFooter.update({},
                 req.body,
                 {
                     upsert: true
@@ -21,5 +19,5 @@ module.exports = function (app) {
                 });
         }
     };
-    return headerController;
+    return footerController;
 };

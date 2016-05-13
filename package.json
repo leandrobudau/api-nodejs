@@ -17,10 +17,14 @@
   },
   "homepage": "https://github.com/leandrobudau/API-Node#readme",
   "dependencies": {
+    "body-parser": "*",
     "express": "*",
     "express-load": "*",
+    "guid": "0.0.12",
+    "guide": "^0.1.0",
     "jade": "*",
     "mongoose": "*",
-    "body-parser":"*"
+    "multer": "^1.1.0",
+    "node-uuid": "^1.4.7"
   }
 }
